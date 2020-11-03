@@ -28,7 +28,7 @@ test:
 
 .PHONY: docker
 docker:
-	SERVICE=main docker build -t test-build -f Dockerfile main/
+	SERVICE=cmd/test-build docker build -t test-build -f Dockerfile cmd/test-build/
 
 .PHONY: push
 push:
